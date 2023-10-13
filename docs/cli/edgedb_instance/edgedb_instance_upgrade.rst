@@ -5,7 +5,7 @@
 edgedb instance upgrade
 =======================
 
-Upgrade EdgeDB instance or installation.
+Upgrades an EdgeDB instance or installation.
 
 .. cli:synopsis::
 
@@ -31,19 +31,19 @@ Options
     The EdgeDB instance name to upgrade.
 
 :cli:synopsis:`--force`
-    Force upgrade process even if there is no new version.
+    Forces the upgrade process even if there is no new version.
 
 :cli:synopsis:`--to-latest`
-    Upgrade specified instance to the latest major version.
+    Upgrades a specified instance to the latest major version.
 
 :cli:synopsis:`--to-nightly`
-    Upgrade specified instance to a latest nightly version.
+    Upgrades a specified instance to a latest nightly version.
 
 :cli:synopsis:`--local-minor`
-    Upgrade all local instances to the latest minor versions.
+    Upgrades all local instances to the latest minor versions.
 
 :cli:synopsis:`--to-version=<version>`
-    Upgrade to a specified major version.
+    Upgrades to a specified major version.
 
 :cli:synopsis:`-v, --verbose`
     Verbose output.

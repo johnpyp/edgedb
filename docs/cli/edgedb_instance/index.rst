@@ -34,28 +34,28 @@ for managing EdgeDB instances.
     :class: funcoptable
 
     * - :ref:`ref_cli_edgedb_instance_create`
-      - Initialize a new server instance
+      - Initializes a new server instance
     * - :ref:`ref_cli_edgedb_instance_destroy`
-      - Destroy a server instance and remove the data stored
+      - Destroys a server instance and remove the data stored
     * - :ref:`ref_cli_edgedb_instance_link`
-      - Link a remote instance
+      - Links a remote instance
     * - :ref:`ref_cli_edgedb_instance_list`
-      - Show all instances
+      - Shows all instances
     * - :ref:`ref_cli_edgedb_instance_logs`
-      - Show logs of an instance
+      - Shows logs of an instance
     * - :ref:`ref_cli_edgedb_instance_start`
-      - Start an instance
+      - Starts an instance
     * - :ref:`ref_cli_edgedb_instance_status`
-      - Show statuses of all or of a matching instance
+      - Shows statuses of all or of a matching instance
     * - :ref:`ref_cli_edgedb_instance_stop`
-      - Stop an instance
+      - Stops an instance
     * - :ref:`ref_cli_edgedb_instance_reset_auth`
-      - Reset password for a user in the instance
+      - Resets password for a user in the instance
     * - :ref:`ref_cli_edgedb_instance_restart`
-      - Restart an instance
+      - Restarts an instance
     * - :ref:`ref_cli_edgedb_instance_revert`
-      - Revert a major instance upgrade
+      - Reverts a major instance upgrade
     * - :ref:`ref_cli_edgedb_instance_unlink`
-      - Unlink a remote instance
+      - Unlinks a remote instance
     * - :ref:`ref_cli_edgedb_instance_upgrade`
-      - Upgrade installations and instances
+      - Upgrades installations and instances

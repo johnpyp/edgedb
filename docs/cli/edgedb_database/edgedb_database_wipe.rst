@@ -5,7 +5,7 @@
 edgedb database wipe
 ====================
 
-Destroy the contents of a :ref:`database <ref_datamodel_databases>`
+Destroys the contents of a :ref:`database <ref_datamodel_databases>`
 
 .. cli:synopsis::
 
@@ -32,4 +32,4 @@ connected to. For specifying the connection target see
 :ref:`connection options <ref_cli_edgedb_connopts>`.
 
 :cli:synopsis:`--non-interactive`
-    Destroy the data without asking for confirmation.
+    Destroys the data without asking for confirmation.

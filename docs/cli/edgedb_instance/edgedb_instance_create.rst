@@ -5,7 +5,7 @@
 edgedb instance create
 ======================
 
-Initialize a new EdgeDB instance.
+Initializes a new EdgeDB instance.
 
 .. cli:synopsis::
 
@@ -64,7 +64,7 @@ Options
     The new EdgeDB instance name.
 
 :cli:synopsis:`--nightly`
-    Use the nightly server for this instance.
+    Uses the nightly server for this instance.
 
 :cli:synopsis:`--default-database=<default-database>`
     Specifies the default database name (created during

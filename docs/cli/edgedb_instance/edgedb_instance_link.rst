@@ -4,7 +4,7 @@
 edgedb instance link
 ====================
 
-Authenticate a connection to a remote EdgeDB instance and assign an
+Authenticates a connection to a remote EdgeDB instance and assigns an
 instance name to simplify future connections.
 
 .. cli:synopsis::
@@ -44,13 +44,13 @@ linked.
     name.
 
 :cli:synopsis:`--non-interactive`
-    Run in non-interactive mode (accepting all defaults).
+    Runs in non-interactive mode (accepting all defaults).
 
 :cli:synopsis:`--quiet`
-    Reduce command verbosity.
+    Reduces command verbosity.
 
 :cli:synopsis:`--trust-tls-cert`
-    Trust peer certificate.
+    Sets peer certificate to trusted.
 
 :cli:synopsis:`--overwrite`
-    Overwrite existing credential file if any.
+    Overwrites existing credential file if any.

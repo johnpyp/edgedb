@@ -5,7 +5,7 @@
 edgedb migration log
 ====================
 
-Show all migration versions.
+Shows all migration versions.
 
 .. cli:synopsis::
 
@@ -22,7 +22,7 @@ to. For specifying the connection target see :ref:`connection options
 <ref_cli_edgedb_connopts>`.
 
 :cli:synopsis:`--from-fs`
-    Print revisions from the schema directory (no database connection
+    Prints revisions from the schema directory (no database connection
     required). At least one of :cli:synopsis:`--from-db` or
     :cli:synopsis:`--from-fs` is required for ``migration log``
     command.
@@ -34,12 +34,12 @@ to. For specifying the connection target see :ref:`connection options
     command.
 
 :cli:synopsis:`--newest-first`
-    Sort migrations starting from newer to older, by default older
-    revisions go first.
+    Sorts migrations starting from newer to older, as opposed to the
+    default in which older revisions are displayed first.
 
 :cli:synopsis:`--schema-dir=<schema-dir>`
     Directory where the schema files are located. Defaults to
     ``./dbschema``.
 
 :cli:synopsis:`--limit=<N>`
-    Show maximum of :cli:synopsis:`N` revisions (default is unlimited).
+    Sets up to :cli:synopsis:`N` revisions to show (default: unlimited).

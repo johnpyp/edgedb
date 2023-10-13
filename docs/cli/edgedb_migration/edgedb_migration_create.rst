@@ -12,7 +12,7 @@ migration script. This is done by invoking the following command:
 
     edgedb migration create [<options>]
 
-This will start an interactive tool that will provide the user with
+This command starts an interactive tool that provides the user with
 suggestions based on the differences between the current database and
 the schema file. The prompts will look something like this:
 
@@ -43,15 +43,15 @@ to. For specifying the connection target see :ref:`connection options
     also specified.
 
 :cli:synopsis:`--allow-unsafe`
-    Apply the most probable unsafe changes in case there are any.
+    Applies the most probable unsafe changes in case there are any.
     This is only useful in non-interactive mode.
 
 :cli:synopsis:`--allow-empty`
-    Create a new migration even if there are no changes. This is
+    Creates a new migration even if there are no changes. This is
     useful for creating migration stubs for data-only migrations.
 
 :cli:synopsis:`--schema-dir=<schema-dir>`
-    Directory where the schema files are located. Defaults to
+    Specifies the directory where the schema files are located. Defaults to
     ``./dbschema``.
 
 :cli:synopsis:`--squash`

@@ -5,7 +5,7 @@
 edgedb instance reset-password
 ==============================
 
-Reset password for a user in the EdgeDB instance.
+Resets password for a user in the EdgeDB instance.
 
 .. cli:synopsis::
 
@@ -35,13 +35,13 @@ Options
     credentials file.
 
 :cli:synopsis:`--password`
-    Read the password from the terminal rather than generating a new one.
+    Reads the password from the terminal rather than generating a new one.
 
 :cli:synopsis:`--password-from-stdin`
-    Read the password from stdin rather than generating a new one.
+    Reads the password from stdin rather than generating a new one.
 
 :cli:synopsis:`--save-credentials`
-    Save new user and password into a credentials file. By default
+    Saves a new user and password into a credentials file. By default
     credentials file is updated only if user name matches.
 
 :cli:synopsis:`--no-save-credentials`

@@ -5,7 +5,7 @@
 edgedb instance start
 =====================
 
-Start an EdgeDB instance.
+Starts an EdgeDB instance, changing status from ``inactive`` to ``running``.
 
 .. cli:synopsis::
 
@@ -31,6 +31,6 @@ Options
     The EdgeDB instance name.
 
 :cli:synopsis:`--foreground`
-    Start the instance in the foreground rather than using systemd to
-    manage the process (note you might need to stop non-foreground
+    Starts the instance in the foreground rather than using systemd to
+    manage the process (note: you might need to stop the non-foreground
     instance first).

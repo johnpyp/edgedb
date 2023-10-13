@@ -39,14 +39,14 @@ single SDL document.
     :class: funcoptable
 
     * - :ref:`ref_cli_edgedb_migration_apply`
-      - Bring current database to the latest or a specified revision
+      - Brings current database to the latest or a specified revision
     * - :ref:`ref_cli_edgedb_migration_create`
-      - Create a migration script
+      - Creates a migration script
     * - :ref:`ref_cli_edgedb_migration_edit`
-      - Edit migration file
+      - Edits migration file
     * - :ref:`ref_cli_edgedb_migration_log`
-      - Show all migration versions
+      - Shows all migration versions
     * - :ref:`ref_cli_edgedb_migration_status`
-      - Show current migration state
+      - Shows current migration state
     * - :ref:`ref_cli_edgedb_migration_upgrade_check`
       - Checks your schema against a different EdgeDB version.

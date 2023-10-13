@@ -5,7 +5,7 @@
 edgedb dump
 ===========
 
-Backup an EdgeDB database to a file.
+Backs up an EdgeDB database to a file.
 
 .. cli:synopsis::
 

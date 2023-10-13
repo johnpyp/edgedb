@@ -4,7 +4,7 @@
 edgedb instance unlink
 ======================
 
-Unlink from a previously linked remote EdgeDB instance.
+Unlinks from a previously linked remote EdgeDB instance.
 
 .. cli:synopsis::
 

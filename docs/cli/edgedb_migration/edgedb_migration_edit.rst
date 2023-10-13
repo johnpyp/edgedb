@@ -5,7 +5,7 @@
 edgedb migration edit
 =======================
 
-Edit migration file.
+Edits migration file.
 
 .. cli:synopsis::
 
@@ -30,4 +30,4 @@ specifying the connection target see :ref:`connection options
     Do not check migration within the database connection.
 
 :cli:synopsis:`--non-interactive`
-    Fix migration id non-interactively, and don't run editor.
+    Fixes migration id non-interactively, without running the editor.

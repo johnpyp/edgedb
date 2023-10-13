@@ -5,7 +5,7 @@
 edgedb instance status
 ======================
 
-Show instance information.
+Shows instance information.
 
 .. cli:synopsis::
 
@@ -23,13 +23,14 @@ Options
 =======
 
 :cli:synopsis:`<name>`
-    Show only the status of the specific EdgeDB instance.
+    Shows only the status of the specific EdgeDB instance (running or not,
+    and on which ``pid``).
 
 :cli:synopsis:`--json`
-    Format output as JSON.
+    Formats output as JSON.
 
 :cli:synopsis:`--extended`
-    Output more debug info about each instance.
+    Outputs more debug info about each instance.
 
 :cli:synopsis:`--service`
-    Show current systems service information.
+    Shows current systems service information.

@@ -23,10 +23,10 @@ Options
 =======
 
 :cli:synopsis:`--instance-name`
-    Display only the instance name.
+    Displays only the instance name.
 
 :cli:synopsis:`-j, --json`
-    Output in JSON format.
+    Outputs in JSON format.
 
 :cli:synopsis:`--project-dir=<project-dir>`
     The project directory can be specified explicitly. Defaults to the

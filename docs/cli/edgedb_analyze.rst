@@ -16,7 +16,7 @@ edgedb analyze
     running :ref:`ref_cli_edgedb_ui` to invoke your instance's UI). Use it by
     prepending your query with ``analyze``.
 
-Run a query performance analysis on the given query.
+Runs a query performance analysis on the given query.
 
 .. cli:synopsis::
 

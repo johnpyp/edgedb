@@ -5,7 +5,7 @@
 edgedb instance logs
 ====================
 
-Show instance logs.
+Shows instance logs.
 
 .. cli:synopsis::
 
@@ -34,4 +34,4 @@ Options
     Number of the most recent lines to show.
 
 :cli:synopsis:`-f, --follow`
-    Show log's tail and the continue watching for the new entries.
+    Shows log's tail and continues watching for new entries.

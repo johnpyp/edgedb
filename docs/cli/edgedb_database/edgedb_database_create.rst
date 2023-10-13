@@ -5,7 +5,7 @@
 edgedb database create
 ======================
 
-Create a new :ref:`database <ref_datamodel_databases>`.
+Creates a new :ref:`database <ref_datamodel_databases>`.
 
 .. cli:synopsis::
 

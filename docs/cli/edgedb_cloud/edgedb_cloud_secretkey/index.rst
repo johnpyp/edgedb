@@ -9,7 +9,7 @@ edgedb cloud secretkey
 
     These CLI commands require CLI version 3.0 or later.
 
-Manage your secret keys
+Manages your secret keys.
 
 .. toctree::
     :maxdepth: 3
@@ -23,11 +23,11 @@ Manage your secret keys
     :class: funcoptable
 
     * - :ref:`ref_cli_edgedb_cloud_secretkey_create`
-      - Create a new secret key
+      - Creates a new secret key
     * - :ref:`ref_cli_edgedb_cloud_secretkey_list`
-      - List existing secret keys
+      - Lists existing secret keys
     * - :ref:`ref_cli_edgedb_cloud_secretkey_revoke`
-      - Revoke a secret key
+      - Revokes a secret key
 
 .. note::
 

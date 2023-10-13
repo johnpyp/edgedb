@@ -5,7 +5,7 @@
 edgedb instance list
 ====================
 
-Show all EdgeDB instances.
+Shows all EdgeDB instances.
 
 .. cli:synopsis::
 
@@ -24,7 +24,7 @@ Options
 =======
 
 :cli:synopsis:`--extended`
-    Output more debug info about each instance.
+    Outputs more debug info about each instance.
 
 :cli:synopsis:`-j, --json`
-    Output in JSON format.
+    Outputs in JSON format.

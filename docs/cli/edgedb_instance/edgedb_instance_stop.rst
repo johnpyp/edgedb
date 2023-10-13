@@ -5,7 +5,7 @@
 edgedb instance stop
 ====================
 
-Stop an EdgeDB instance.
+Stops an EdgeDB instance.
 
 .. cli:synopsis::
 

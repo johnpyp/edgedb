@@ -5,7 +5,7 @@
 edgedb list
 ===========
 
-List matching database objects by name and type.
+Lists matching database objects by name and type.
 
 .. cli:synopsis::
 
@@ -23,28 +23,28 @@ Types
 =====
 
 :cli:synopsis:`edgedb list aliases`
-    Display list of aliases defined in the schema.
+    Displays a list of aliases defined in the schema.
 
 :cli:synopsis:`edgedb list casts`
-    Display list of casts defined in the schema.
+    Displays a list of casts defined in the schema.
 
 :cli:synopsis:`edgedb list databases`
-    Display list of databases in the server instance.
+    Displays a list of databases in the server instance.
 
 :cli:synopsis:`edgedb list indexes`
-    Display list of indexes defined in the schema.
+    Displays a list of indexes defined in the schema.
 
 :cli:synopsis:`edgedb list modules`
-    Display list of modules defined in the schema.
+    Displays a list of modules defined in the schema.
 
 :cli:synopsis:`edgedb list roles`
-    Display list of roles in the server instance.
+    Displays a list of roles in the server instance.
 
 :cli:synopsis:`edgedb list scalars`
-    Display list of scalar types defined in the schema.
+    Displays a list of scalar types defined in the schema.
 
 :cli:synopsis:`edgedb list types`
-    Display list of object types defined in the schema.
+    Displays a list of object types defined in the schema.
 
 Options
 =======

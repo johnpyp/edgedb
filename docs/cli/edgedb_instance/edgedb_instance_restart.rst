@@ -5,7 +5,7 @@
 edgedb instance restart
 =======================
 
-Restart an EdgeDB instance.
+Restarts an EdgeDB instance.
 
 .. cli:synopsis::
 

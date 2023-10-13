@@ -5,7 +5,7 @@
 edgedb instance destroy
 =======================
 
-Remove an EdgeDB instance.
+Removes an EdgeDB instance.
 
 .. cli:synopsis::
 
@@ -31,7 +31,7 @@ Options
     The EdgeDB instance name.
 
 :cli:synopsis:`--force`
-    Destroy the instance even if it is referred to by a project.
+    Destroys the instance even if it is referred to by a project.
 
 :cli:synopsis:`-v, --verbose`
     Verbose output.

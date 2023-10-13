@@ -4,7 +4,7 @@
 edgedb configure
 ================
 
-Configure the EdgeDB server.
+Configures the EdgeDB server.
 
 .. cli:synopsis::
 

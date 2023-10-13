@@ -9,7 +9,7 @@ edgedb cloud secretkey list
 
     This CLI command requires CLI version 3.0 or later.
 
-List existing secret keys
+Lists existing secret keys.
 
 .. cli:synopsis::
 
@@ -24,4 +24,4 @@ Options
 =======
 
 :cli:synopsis:`--json`
-    Output results as JSON
+    Outputs results as JSON

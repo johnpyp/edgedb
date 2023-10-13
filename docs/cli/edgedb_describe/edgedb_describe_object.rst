@@ -5,7 +5,7 @@
 edgedb describe object
 ======================
 
-Describe a named schema object.
+Describes a named schema object.
 
 .. cli:synopsis::
 

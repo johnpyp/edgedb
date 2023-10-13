@@ -9,7 +9,7 @@ edgedb cloud secretkey create
 
     This CLI command requires CLI version 3.0 or later.
 
-Create a new secret key
+Creates a new secret key.
 
 .. cli:synopsis::
 
@@ -24,7 +24,7 @@ Options
 =======
 
 :cli:synopsis:`--json`
-    Output results as JSON
+    Outputs results as JSON
 :cli:synopsis:`-n, --name <name>`
     Friendly key name
 :cli:synopsis:`--description <description>`

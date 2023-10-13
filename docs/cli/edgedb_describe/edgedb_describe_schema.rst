@@ -5,7 +5,7 @@
 edgedb describe schema
 ======================
 
-Give an :ref:`SDL <ref_eql_sdl>` description of the schema of the
+Gives an :ref:`SDL <ref_eql_sdl>` description of the schema of the
 database specified by the connection options.
 
 .. cli:synopsis::

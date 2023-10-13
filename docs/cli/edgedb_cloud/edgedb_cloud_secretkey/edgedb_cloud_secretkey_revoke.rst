@@ -9,7 +9,7 @@ edgedb cloud secretkey revoke
 
     This CLI command requires CLI version 3.0 or later.
 
-Revoke a secret key
+Revokes a secret key.
 
 .. cli:synopsis::
 
@@ -24,8 +24,8 @@ Options
 =======
 
 :cli:synopsis:`--json`
-    Output results as JSON
+    Outputs results as JSON
 :cli:synopsis:`--secret-key-id <secret_key_id>`
     Id of secret key to revoke
 :cli:synopsis:`-y, --non-interactive`
-    Revoke the key without asking for confirmation.
+    Revokes the key without asking for confirmation.

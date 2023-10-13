@@ -5,7 +5,7 @@
 edgedb restore
 ==============
 
-Restore an EdgeDB database from a backup file.
+Restores an EdgeDB database from a backup file.
 
 .. cli:synopsis::
 

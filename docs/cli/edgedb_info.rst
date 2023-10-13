@@ -5,7 +5,7 @@
 edgedb info
 ===========
 
-Display information about the EdgeDB installation. Currently this command
+Displays information about the EdgeDB installation. Currently this command
 displays the filesystem paths used by EdgeDB.
 
 .. cli:synopsis::

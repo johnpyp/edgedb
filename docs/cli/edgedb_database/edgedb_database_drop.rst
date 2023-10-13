@@ -5,7 +5,7 @@
 edgedb database drop
 ====================
 
-Drop a :ref:`database <ref_datamodel_databases>`.
+Drops a :ref:`database <ref_datamodel_databases>`.
 
 .. cli:synopsis::
 
@@ -29,4 +29,4 @@ connected to. For specifying the connection target see
 :cli:synopsis:`<name>`
     The name of the database to drop.
 :cli:synopsis:`--non-interactive`
-    Drop the database without asking for confirmation.
+    Drops the database without asking for confirmation.

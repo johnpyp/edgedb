@@ -5,7 +5,7 @@
 edgedb query
 ============
 
-Execute one or more EdgeQL queries.
+Executes one or more EdgeQL queries.
 
 .. cli:synopsis::
 

@@ -5,7 +5,9 @@
 edgedb migration upgrade-check
 ==============================
 
-Checks your schema against a different EdgeDB version.
+Checks your schema against a different EdgeDB version. Will automatically
+install new versions if instructed to check against a currently uninstalled
+version.
 
 .. cli:synopsis::
 
@@ -35,17 +37,17 @@ to. For specifying the connection target see :ref:`connection options
     Directory where the schema files are located. Defaults to ``./dbschema``.
 
 :cli:synopsis:`--to-version <to_version>`
-    Check the upgrade to a specified version
+    Checks possibility of upgrade to a specified version.
 
 :cli:synopsis:`--to-nightly`
-    Check the upgrade to a latest nightly version
+    Checks possibility of upgrade to latest nightly version.
 
 :cli:synopsis:`--to-testing`
-    Check the upgrade to a latest testing version
+    Checks the possibility of upgrade to latest testing version.
 
 :cli:synopsis:`--to-channel <to_channel>`
-    Check the upgrade to the latest version in the channel [possible values:
-    stable, testing, nightly]
+    Check the possibility of upgrade to the latest version of one of
+    three channels (possible values: stable, testing, nightly).
 
 :cli:synopsis:`--watch`
-    Monitor schema changes and check again on change
+    Monitors schema changes and check again on change.

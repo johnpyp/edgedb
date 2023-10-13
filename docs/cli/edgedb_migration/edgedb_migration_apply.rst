@@ -27,11 +27,11 @@ to. For specifying the connection target see :ref:`connection options
     Do not print any messages, only indicate success by exit status.
 
 :cli:synopsis:`--schema-dir=<schema-dir>`
-    Directory where the schema files are located. Defaults to
+    Specifies directory where the schema files are located. Defaults to
     ``./dbschema``.
 
 :cli:synopsis:`--to-revision=<to-revision>`
-    Upgrade to a specified revision.
+    Upgrades to a specified revision.
 
     Unique prefix of the revision can be specified instead of full
     revision name.
@@ -46,7 +46,7 @@ to. For specifying the connection target see :ref:`connection options
         The ``--dev-mod`` option is compatible with EdgeDB server 3.0 and
         above.
 
-    Apply the current schema changes on top of the current migration history,
-    without having created a new migration. This works the same way as
-    :ref:`ref_cli_edgedb_watch` but without starting a long-running watch
+    Applies the current schema changes on top of the current migration
+    history, without having created a new migration. This works the same way
+    as :ref:`ref_cli_edgedb_watch` but without starting a long-running watch
     task.

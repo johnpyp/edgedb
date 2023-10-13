@@ -9,7 +9,7 @@ edgedb cloud logout
 
     This CLI command requires CLI version 3.0 or later.
 
-Forget the stored access token
+Logs out, forgetting the stored access token.
 
 .. cli:synopsis::
 
@@ -19,9 +19,9 @@ Options
 =======
 
 :cli:synopsis:`--all-profiles`
-    Logout from all Cloud profiles
+    Logs out from all Cloud profiles
 :cli:synopsis:`--force`
-    Force log out from all profiles, even if linked to a project
+    Forces log out from all profiles, even if linked to a project
 :cli:synopsis:`--non-interactive`
     Do not ask questions, assume user wants to log out of all profiles not
     linked to a project
