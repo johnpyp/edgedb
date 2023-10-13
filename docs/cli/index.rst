@@ -113,29 +113,42 @@ differs between operating systems, and can be found with the
 :ref:`ref_cli_edgedb_info` command which will display its location in
 the ``Config`` row of its output.
 
-The ``cli.toml`` has the following structure. All fields are optional:
+The ``cli.toml`` file contains the following parameters, all of which
+are optional. An example ``cli.toml`` with all parameters:
 
 .. code-block::
 
     [shell]
-    expand-strings = true          # Stop escaping newlines in quoted strings
-    history-size = 10000           # Set number of entries retained in history
-    implicit-properties = false    # Print implicit properties of objects
-    input-mode = "emacs"           # Set input mode. One of: vi, emacs
-    limit = 100                    # Set implicit LIMIT
-                                   # Defaults to 100, specify 0 to disable
-    idle-transaction-timeout = "1h"
-    output-format = "default"      # Set output format.
-                                   # One of: default, json, json-pretty,
-                                   # json-lines
+    expand-strings = true
+    history-size = 10000
+    implicit-properties = false
+    input-mode = "emacs"
+    limit = 100
+    idle-transaction-timeout = "1m1s"
+    output-format = "default"
     display-typenames = true
-    print-stats = "off"            # Print statistics on each query.
-                                   # One of: off, query, detailed
-    verbose-errors = false         # Print all errors with maximum verbosity
+    print-stats = "off"
+    verbose-errors = false
 
-* expand-strings: ``true`` to show line breaks when quoted strings contain
-  ``\n``, ``false`` to display the ``\n`` on a single line
-* history-size: 
+* ``expand-strings``: ``true`` to show line breaks in quoted strings with
+  ``\n``, ``false`` to display on a single line with ``\n`` shown.
+* ``history-size``: Maximum number of queries to keep in the
+  ``edgedb.history``file. History can be accessed via the ``\history`` or 
+  ``\s`` command.
+* ``implicit-properties``: Includes type name inside each query when set
+  to ``true``.
+* ``input-mode``: One of ``vi``, ``emacs``
+* ``limit``: Maximum number of query results to display (default 100). Set to
+  0 to disable.
+* ``idle-transaction-timeout``: Use a single unbroken string, e.g. ``1m20s``.
+* ``output-format``: One of ``default``, ``json``, ``json-pretty``,
+  ``json-lines``, ``tab-separated``.
+* ``display-typenames``: Setting to ``false`` will display ``Object`` for all
+  objects instead of their type names.
+* ``print-stats``: Displays time taken after each query. Options: ``off``,
+  ``query``, ``detailed``
+* ``verbose-errors``: Prints all errors with maximum verbosity when set to
+  ``true``, including backtraces.
 
 :ref:`Notes on network usage <ref_cli_edgedb_network>`
 
