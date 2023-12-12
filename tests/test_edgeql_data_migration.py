@@ -11604,6 +11604,72 @@ class TestEdgeQLDataMigration(EdgeQLDataMigrationTestCase):
             }
         ''')
 
+    async def test_edgeql_migration_between_computeds_01(self):
+        await self.migrate(r'''
+            type Away {
+                x: str;
+                property y {
+                    using (.x ++ "!");
+                    constraint exclusive;
+                }
+            };
+            type Away2 extending Away;
+        ''')
+
+        await self.migrate(r'''
+            type Away {
+                x: str;
+                property y -> str {
+                    constraint exclusive;
+                }
+            };
+            type Away2 extending Away;
+        ''')
+
+    async def test_edgeql_migration_between_computeds_02(self):
+        await self.migrate(r'''
+            type Away {
+                x: str;
+                property y {
+                    using (.x);
+                    constraint exclusive;
+                }
+            };
+            type Away2 extending Away;
+        ''')
+
+        await self.migrate(r'''
+            type Away {
+                x: str;
+                property y {
+                    using (.x ++ "!");
+                    constraint exclusive;
+                }
+            };
+            type Away2 extending Away;
+        ''')
+
+        await self.migrate(r'''
+            type Away {
+                x: str;
+                property y {
+                    using (.x);
+                    constraint exclusive;
+                }
+            };
+            type Away2 extending Away;
+        ''')
+
+        await self.migrate(r'''
+            type Away {
+                x: str;
+                property y -> str {
+                    constraint exclusive;
+                }
+            };
+            type Away2 extending Away;
+        ''')
+
     async def test_edgeql_migration_alias_new_computed_01(self):
         await self.migrate(r'''
             global a_id -> str;

@@ -14355,6 +14355,83 @@ CREATE MIGRATION m14i24uhm6przo3bpl2lqndphuomfrtq3qdjaqdg6fza7h6m7tlbra
             COMMIT MIGRATION;
         ''')
 
+    async def test_edgeql_ddl_adjust_computed_13(self):
+        await self.con.execute(r'''
+            create type X {
+                create property bar -> int64 {
+                    create constraint std::exclusive
+                }
+            };
+        ''')
+        await self.con.execute(r'''
+            alter type X alter property bar using ('1');
+        ''')
+
+    async def test_edgeql_ddl_adjust_computed_14(self):
+        await self.con.execute(r'''
+            create type X {
+                create property bar -> int64;
+                create constraint std::exclusive on (.bar);
+            };
+        ''')
+        await self.con.execute(r'''
+            alter type X alter property bar using ('1');
+        ''')
+
+    async def test_edgeql_ddl_adjust_computed_15(self):
+        await self.con.execute(r'''
+            create type Away {
+                create property x -> str;
+                create property y {
+                    using (.x ++ "!");
+                    create constraint exclusive;
+                }
+            };
+            create type Away2 extending Away;
+        ''')
+        await self.con.execute(r'''
+            alter type Away alter property y reset expression;
+        ''')
+
+        await self.con.execute("""
+            insert Away { x := '1', y := '1' }
+        """)
+        async with self.assertRaisesRegexTx(
+            edgedb.ConstraintViolationError,
+            '',
+        ):
+            await self.con.execute("""
+                insert Away { x := '2', y := '1' }
+            """)
+
+    async def test_edgeql_ddl_adjust_computed_16(self):
+        # this is caused by the annoying thing where pointers that are
+        # a simple alias like this just inherit from the other point.
+        await self.con.execute(r'''
+            create type Away {
+                create property x -> str;
+                create property y {
+                    using (.x);
+                    create constraint exclusive;
+                }
+            };
+            create type Away2 extending Away;
+        ''')
+        await self.con.execute(r'''
+            alter type Away alter property y reset expression;
+        ''')
+
+        await self.con.execute("""
+            insert Away { x := '2', y := '1' }
+        """)
+        async with self.assertRaisesRegexTx(
+            edgedb.ConstraintViolationError,
+            '',
+        ):
+            await self.con.execute("""
+                insert Away { x := '1', y := '1' }
+            """)
+
     async def test_edgeql_ddl_captured_as_migration_01(self):
 
         await self.con.execute(r"""
