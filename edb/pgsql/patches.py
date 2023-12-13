@@ -77,4 +77,16 @@ The current kinds are:
  * repair - fix up inconsistencies in *user* schemas
 """
 PATCHES: list[tuple[str, str]] = _setup_patches([
+    (
+        "sql",
+        """
+        CREATE TABLE IF NOT EXISTS "edgedb"."_query_cache" (
+            "key" bigint NOT NULL,
+            "schema_version" uuid NOT NULL,
+            "input" bytea NOT NULL,
+            "output" bytea NOT NULL,
+            PRIMARY KEY ("key", "schema_version")
+        )
+        """
+    ),
 ])
