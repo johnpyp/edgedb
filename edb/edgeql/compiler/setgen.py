@@ -414,12 +414,12 @@ def compile_path(expr: qlast.Path, *, ctx: context.ContextLevel) -> irast.Set:
                 # aren't really particularly useful outside that
                 # anyway, so disallow them.
                 if (
-                    ptr_expr.name in ('source', 'target')
+                    ptr_name in ('source', 'target')
                     and ctx.env.options.schema_object_context
                     not in (s_constr.Constraint, s_indexes.Index)
                 ):
                     raise errors.QueryError(
-                        f'@{ptr_expr.name} may only be used in index and '
+                        f'@{ptr_name} may only be used in index and '
                         'constraint definitions',
                         context=step.context)
 
